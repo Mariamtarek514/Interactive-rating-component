@@ -34,7 +34,7 @@ header {
 .result {
     background-color: var(--card-bg);
     width: 350px;
-    max-width: 100%;
+    max-width: calc(100% - 40px);
     padding: 30px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -45,8 +45,8 @@ header {
 @media (max-width: 767px) {
     .card,
     .result {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
