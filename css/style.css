@@ -1,0 +1,151 @@
+/* start main setting */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+:root {
+    --primary-color: hsl(25, 97%, 53%);
+    --bg-color: hsl(216, 12%, 8%);
+    --card-bg: hsl(213, 19%, 18%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    font-family: "Overpass", sans-serif;
+    margin: 0;
+}
+
+/* end main setting */
+
+header {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    position: absolute;
+    z-index: 1;
+}
+.card,
+.result {
+    background-color: var(--card-bg);
+    width: 370px;
+    padding: 30px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+@media (max-width: 767px) {
+    .card,
+    .result {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+.card .icon {
+    margin-bottom: 25px;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: hsl(0deg 0% 100% / 3%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .icon img {
+    width: 15px;
+}
+.card h3 {
+    color: hsl(0, 0%, 100%);
+}
+.card p {
+    font-size: 13px;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+}
+.card ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card ul li {
+    width: fit-content;
+    padding: 10px 17px;
+    background-color: hsl(0deg 0% 100% / 3%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.card ul li:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.card ul li.li-click {
+    background-color: hsl(217, 12%, 63%);
+    color: var(--white);
+}
+.card button {
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.card button:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+.result {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.result > p {
+    color: var(--primary-color);
+    background-color: hsl(0deg 0% 100% / 3%);
+    width: fit-content;
+    margin: 10px auto 19px;
+    padding: 7px 19px;
+    border-radius: 14px;
+    font-size: 14px;
+}
+.result .info-box {
+    text-align: center;
+}
+.result .info-box h2 {
+    color: var(--white);
+    margin: 0;
+}
+.result .info-box > p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    font-size: 13.2px;
+}
