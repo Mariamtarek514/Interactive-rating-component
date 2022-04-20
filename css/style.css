@@ -32,7 +32,7 @@ header {
 .card,
 .result {
     background-color: var(--card-bg);
-    width: 370px;
+    width: 365px;
     padding: 30px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -65,8 +65,9 @@ header {
 .card .icon img {
     width: 15px;
 }
-.card h3 {
+.card h1 {
     color: hsl(0, 0%, 100%);
+    font-size: 16px;
 }
 .card p {
     font-size: 13px;
@@ -80,7 +81,7 @@ header {
 }
 .card ul li {
     width: fit-content;
-    padding: 10px 17px;
+    padding: 8px 15px;
     background-color: hsl(0deg 0% 100% / 3%);
     color: hsl(217, 12%, 63%);
     border-radius: 50%;
@@ -102,8 +103,8 @@ header {
 .card button {
     border: none;
     width: 100%;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 8px;
     background-color: var(--primary-color);
     color: var(--white);
     margin-top: 10px;
@@ -113,6 +114,10 @@ header {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .card button:hover {
     background-color: var(--white);
